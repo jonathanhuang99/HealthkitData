@@ -201,7 +201,7 @@ class ViewController: UIViewController {
                 }
                 self.getDistance { (result) in
                     DispatchQueue.main.async {
-                        let distanceCount = String(Int(result))
+                        let distanceCount = String(Double(result))
                         self.distanceValueLabel.text = String(distanceCount)
                     }
                 }
